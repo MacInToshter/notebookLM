@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
           pip install google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
       - name: Sync files to Google Drive
