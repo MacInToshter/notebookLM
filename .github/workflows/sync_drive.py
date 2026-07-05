@@ -18,7 +18,7 @@ credentials = Credentials.from_service_account_info(
 )
 
 # Build Google Drive service
-drive_service = build('drive', 'v3', credentials=credentials)
+drive_service = build('drive', 'v4', credentials=credentials)
 
 # Upload files from repo to Google Drive
 def upload_file(file_path, folder_id):
